@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Overview:  This project leverages Next.js for its server-side rendering capabilities and Supabase as a robust database solution to create a application capable of filtering,  and managing data efficiently. It incorporates features like sliders, form validation, local storage, and automatic data refreshing to enhance user experience and data integrity.
 
-## Getting Started
+Key Features: 
 
-First, run the development server:
+**Data Filtering**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Users can apply various filters to refine data based on specific criteria.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Form Validation with Zod:**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Zod is used to validate user input, ensuring data integrity and preventing errors.
+- Validation rules are defined to enforce data types, required fields, and other constraints.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Data Fetching and Refresh:**
 
-## Learn More
+- The application fetches data from the Supabase database using appropriate API calls.
+- Data is automatically refreshed every 30 minutes to keep the interface up-to-date with the latest information.
 
-To learn more about Next.js, take a look at the following resources:
+**Responsive Design:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- The application is designed to adapt seamlessly to different screen sizes, providing a consistent user experience on both small and large devices.
+- Responsive layouts and media queries ensure optimal rendering and navigation across various platforms.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Technology Stack:**
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Next.js:** A popular React framework for building server-side rendered web applications.
+- **Supabase:** A Firebase-like platform providing a PostgreSQL database, real-time APIs, and authentication services.
+- **Zod:** A TypeScript-first validation library for defining, validating, and transforming data.
