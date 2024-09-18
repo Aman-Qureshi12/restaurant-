@@ -1,0 +1,84 @@
+.app__menu-section {
+  background-color: var(--color-black);
+}
+
+.app__menu-tabs {
+  gap: 50px;
+}
+
+.app__menu-section-heading {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.app__home-menu-section {
+  padding: 2rem 0;
+  display: flex;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  gap: 50px;
+}
+
+.app__home-menu-section {
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer and Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.app__home-menu-section::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+.dishActive {
+  padding: 0.5rem 1rem;
+  background: var(--color-grey);
+  border-radius: 5px;
+}
+
+.dishActiveNone {
+  padding: 0;
+  background: none;
+}
+
+@media screen and (max-width: 500px) {
+  .app__menu-tabs {
+    gap: 30px;
+  }
+}
+
+.app__gallery-images_arrows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  top: 30%;
+}
+
+.gallery__arrow-icon {
+  color: var(--color-golden);
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: var(--color-black);
+  border-radius: 5px;
+}
+
+.gallery__arrow-icon:hover {
+  color: var(--color-white);
+}
+
+.app__home-menu-section-container {
+  position: relative;
+}
+
+.app__home-menu-image img {
+  border-radius: 3px;
+}
+
+.app__home-menu-content {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}

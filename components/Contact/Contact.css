@@ -1,0 +1,174 @@
+.app__contact-section {
+  background: var(--color-black);
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.app__contact-inputs {
+  width: 50%;
+}
+
+.app__form {
+  padding-top: 2rem;
+  width: 100%;
+}
+
+/* Inputs and textarea */
+.app__contact-input input {
+  padding: 0.8rem 1rem;
+  background: transparent;
+  border: 1px solid var(--color-golden);
+  border-radius: 5px;
+  color: var(--color-golden);
+  width: 100%;
+}
+
+.app__contact-textarea textarea {
+  padding: 0.8rem 1rem;
+  background: transparent;
+  border: 1px solid var(--color-golden);
+  border-radius: 5px;
+  color: var(--color-golden);
+  width: 100%;
+  resize: none;
+  padding-bottom: 1rem;
+}
+
+.app__contact-input,
+.app__contact-textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.app__contact-textarea {
+  padding-bottom: 2rem;
+}
+
+.app__contact-input label,
+.app__contact-textarea label {
+  padding-top: 1rem;
+  color: var(--color-crimson);
+}
+
+/* Info Box  */
+
+.app__contact-infoDetails {
+  background: var(--color-crimson);
+  padding: 2rem 4rem;
+  border-radius: 10px;
+}
+
+.app__contact-info {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.app__contact-info h1 {
+  font-size: 24px;
+}
+
+.app__contact-info-container {
+  width: 50%;
+}
+
+.app__contact-info-heading {
+  text-align: center;
+}
+
+.app__contact-number,
+.app__opening-hours {
+  display: flex;
+  gap: 20px;
+}
+
+.app__contact-number,
+.app__opening-hours,
+.app__contact-address,
+.app__email-id {
+  padding-top: 0.4rem;
+}
+
+.app__contact-number p,
+.app__contact-address,
+.app__email-id {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Social Links */
+
+.app__social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.app__social-links svg {
+  color: var(--color-white);
+  margin: 0.5rem;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.app__social-links svg:hover {
+  color: var(--color-golden);
+}
+
+@media screen and (max-width: 1200px) {
+  .app__contact-number,
+  .app__opening-hours {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .app__contact-address {
+    align-items: first baseline;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .app__contact-section {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .app__contact-info-container,
+  .app__contact-inputs {
+    width: 100%;
+  }
+
+  .app__contact-number,
+  .app__opening-hours {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .app__contact-address {
+    align-items: first baseline;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .app__contact-number,
+  .app__opening-hours {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .app__contact-address {
+    align-items: first baseline;
+  }
+
+  .app__contact-infoDetails {
+    padding: 2rem;
+  }
+
+  .app__contact-address,
+  .app__email-id {
+    flex-wrap: wrap;
+  }
+}

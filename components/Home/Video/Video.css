@@ -1,0 +1,16 @@
+.app__video-section {
+  background: var(--color-black);
+  display: flex;
+  justify-content: center;
+}
+
+.app__video-section video {
+  width: 100%;
+  height: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .app__video-section video {
+    width: 100%;
+  }
+}

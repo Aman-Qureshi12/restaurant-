@@ -1,0 +1,60 @@
+.app__specialDish-section {
+  background: var(--color-black);
+}
+
+.app__specialDishes-heading {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.app__specialDishes-para {
+  text-align: center;
+}
+
+.app__dishesCard-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding-top: 3rem;
+}
+
+.app__dishes-card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.app__dishes-card-content {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1030px) {
+  .app__dishesCard-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .app__dishesCard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .app__special-dishes-card {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app__special-dishes-card {
+    width: 100%;
+  }
+}

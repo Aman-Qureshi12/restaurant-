@@ -1,0 +1,137 @@
+.app__menu-page-section {
+  background: var(--color-black);
+}
+
+.app__menu-page-heading {
+  text-align: center;
+}
+
+.app__dishes-heading {
+  padding-top: 2rem;
+}
+
+.app__gravies-container {
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.app__dishes-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.app__dishes-description {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app__dishes-description {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.app__dishes-card-image img {
+  border-radius: 3px;
+}
+
+.app__menu-page-card-content {
+  padding: 1rem 0;
+}
+
+/* Filter CSS  */
+
+.app__filter-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  background: var(--color-black);
+}
+
+.app__filter-section select {
+  background: none;
+  padding: 1rem;
+  color: var(--color-white);
+  border: 1px solid var(--color-golden);
+  border-radius: 3px;
+  width: 100%;
+}
+
+.app__filter-section option {
+  background-color: black;
+  padding: 1rem;
+  color: var(--color-white);
+  border: 1px solid var(--color-golden);
+}
+
+@media screen and (max-width: 1140px) {
+  .app__dishes-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .app__menu-page-card-content p {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 684px) {
+  .app__menu-page-card-content p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .app__dishes-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .app__gravies-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .app__dishes-card-image img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .app__dishes-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .app__dishes-card-image img {
+    width: 70%;
+  }
+
+  .app__dishes-card-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .app__menu-page-card-content p {
+    width: 70%;
+  }
+
+  .app__menu-page-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .app__dishes-card-image img {
+    width: 100%;
+  }
+
+  .app__menu-page-card-content p {
+    width: 100%;
+  }
+}

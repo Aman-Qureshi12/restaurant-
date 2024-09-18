@@ -1,0 +1,63 @@
+.app__offer-section {
+  background: var(--color-black);
+}
+
+.app__offer-form input {
+  padding: 0.8rem 1rem;
+  background: transparent;
+  border: 1px solid var(--color-golden);
+  border-radius: 5px;
+  color: var(--color-golden);
+  width: 100%;
+}
+
+.app__offer-form {
+  display: flex;
+  gap: 50px;
+  padding: 2rem 0;
+}
+
+.app__offer-input-container div {
+  width: 100%;
+}
+
+.app__offer-content {
+  max-width: 65%;
+  padding-top: 1rem;
+}
+
+.app__offer-input-container {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .app__offer-form {
+    flex-direction: column;
+  }
+
+  .app__offer-content {
+    max-width: 100%;
+  }
+
+  .app__offer-btn {
+    width: 150px;
+    height: 43px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app__offer-input-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .app__offer-form {
+    gap: 20px;
+  }
+
+  .app__offer-btn {
+    width: 100%;
+  }
+}
