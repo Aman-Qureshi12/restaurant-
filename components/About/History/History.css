@@ -1,5 +1,4 @@
 .app__history-section {
-  background-color: var(--color-black);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;

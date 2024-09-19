@@ -1,5 +1,4 @@
 .app__video-section {
-  background: var(--color-black);
   display: flex;
   justify-content: center;
 }

@@ -1,7 +1,9 @@
+// "use client";
 import "./Hero.css";
-import Image from "next/image";
-import welcome from "../../../public/restaurant/welcome.png";
 import Link from "next/link";
+import Image from "next/image";
+
+import welcome from "../../../public/restaurant/welcome.png";
 
 const Hero = () => {
   return (
@@ -17,7 +19,10 @@ const Hero = () => {
           tellus
         </p>
         <Link href="/menu">
-          <button type="button" className="custom__button">
+          <button
+            type="button"
+            className="custom__button app__hero-section-button"
+          >
             Explore Menu
           </button>
         </Link>

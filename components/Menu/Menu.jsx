@@ -27,8 +27,12 @@ const Menu = ({ wholeMenu }) => {
 
       <div className="app__filter-container">
         <div className="app__filter-section">
-          <select name="dishType" onChange={handlePriceFilterChange}>
-            <option value="" disabled selected>
+          <select
+            name="dishType"
+            onChange={handlePriceFilterChange}
+            defaultValue=""
+          >
+            <option value="" disabled>
               Dish Type
             </option>
             <option value="Veg">Veg</option>
@@ -36,9 +40,14 @@ const Menu = ({ wholeMenu }) => {
             <option value="all">All</option>
           </select>
         </div>
+
         <div className="app__filter-section">
-          <select name="dishCategory" onChange={handlePriceFilterChange}>
-            <option value="" disabled selected>
+          <select
+            name="dishCategory"
+            onChange={handlePriceFilterChange}
+            defaultValue=""
+          >
+            <option value="" disabled>
               Dish Category
             </option>
             <option value="Gravy">Gravies</option>
@@ -47,12 +56,17 @@ const Menu = ({ wholeMenu }) => {
             <option value="all">All</option>
           </select>
         </div>
+
         <div className="app__filter-section">
-          <select name="pricing" onChange={handlePriceFilterChange}>
-            <option value="" disabled selected>
+          <select
+            name="pricing"
+            onChange={handlePriceFilterChange}
+            defaultValue=""
+          >
+            <option value="" disabled>
               Price
             </option>
-            <option value="below">below 300</option>
+            <option value="below">Below 300</option>
             <option value="above">Above 300</option>
             <option value="all">All</option>
           </select>
@@ -71,10 +85,17 @@ const Menu = ({ wholeMenu }) => {
             {wholeMenu
               .filter(
                 (menu) =>
-                  (!filters.dishCategory ||
+                  // Dish Category Filter
+                  (filters.dishCategory === "all" ||
+                    filters.dishCategory === "" ||
                     menu.dishCategory === filters.dishCategory) &&
-                  (!filters.dishType || menu.dishType === filters.dishType) &&
-                  (!filters.pricing ||
+                  // Dish Type Filter
+                  (filters.dishType === "all" ||
+                    filters.dishType === "" ||
+                    menu.dishType === filters.dishType) &&
+                  // Price Filter
+                  (filters.pricing === "all" ||
+                    filters.pricing === "" ||
                     (filters.pricing === "below" && menu.price < 300) ||
                     (filters.pricing === "above" && menu.price >= 300))
               )

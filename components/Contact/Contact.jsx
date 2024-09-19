@@ -5,8 +5,11 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { MdCall, MdEmail, MdLocationCity } from "react-icons/md";
 import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
+import { useState } from "react";
+import SuccessModal from "../Modal/SuccessModal";
 
 const Contact = () => {
+  const [showModal, setShowModal] = useState(false);
   const schema = z.object({
     name: z.string().min(1, "Name is required"),
     email: z.string().email("Invalid Email Address "),
@@ -16,6 +19,7 @@ const Contact = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({
     defaultValues: {
@@ -37,6 +41,8 @@ const Contact = () => {
     localStorage.setItem("formData", JSON.stringify(formData));
 
     console.log(formData);
+    setShowModal(true);
+    reset();
   };
 
   return (
@@ -129,6 +135,13 @@ const Contact = () => {
           <FiInstagram />
         </div>
       </div>
+      {showModal && (
+        <SuccessModal
+          message="Successfully submitted"
+          show={showModal}
+          onClose={() => setShowModal(false)}
+        />
+      )}
     </section>
   );
 };
