@@ -14,9 +14,8 @@ const Hero = () => {
           className="p__opensans app__hero-caption"
           style={{ margin: "2rem 0" }}
         >
-          Sit tellus loborits sed senectus vivamus molestie Condimentum volutpat
-          morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet
-          tellus
+          Indulge in every bite, a unique experience. Creative dishes and
+          authentic flavors await you in a welcoming atmosphere.
         </p>
         <Link href="/menu">
           <button

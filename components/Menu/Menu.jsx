@@ -110,11 +110,17 @@ const Menu = ({ wholeMenu }) => {
                     />
                   </div>
                   <div className=" app__menu-page-card-content">
-                    <p className="p__cormorant"> {menu.dishName}</p>
+                    <p className="p__cormorant  app__dishes-title">
+                      {" "}
+                      {menu.dishName}
+                    </p>
                     <p className="p__opensans app__dishes-description">
                       {menu.description.slice(0, 50)}...
                     </p>
-                    <p className="p__opensans"> $ {menu.price}</p>
+                    <p className="p__opensans app__dishes-prices">
+                      {" "}
+                      $ {menu.price}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -135,11 +141,17 @@ const Menu = ({ wholeMenu }) => {
                   />
                 </div>
                 <div className="app__menu-page-card-content">
-                  <p className="p__cormorant"> {menu.dishName}</p>
+                  <p className="p__cormorant app__dishes-title">
+                    {" "}
+                    {menu.dishName}
+                  </p>
                   <p className="p__opensans app__dishes-description">
                     {menu.description.slice(0, 50)}...
                   </p>
-                  <p className="p__opensans"> $ {menu.price}</p>
+                  <p className="p__opensans app__dishes-prices">
+                    {" "}
+                    $ {menu.price}
+                  </p>
                 </div>
               </div>
             ))}
