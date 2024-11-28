@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import ErrorImage from "../../public/Error.webp";
+import Link from "next/link";
 
 const NotFound = () => {
   return (
@@ -13,7 +14,9 @@ const NotFound = () => {
         Oops! Something’s missing, just like your meal. Let’s help you find your
         way back to the menu!
       </p>
-      <button className="custom__button">Back to Home</button>
+      <Link href="/">
+        <button className="custom__button">Back to Home</button>
+      </Link>
     </section>
   );
 };
