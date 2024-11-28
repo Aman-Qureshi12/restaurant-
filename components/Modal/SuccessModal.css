@@ -1,0 +1,25 @@
+@keyframes easeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
+.app__success-modal {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: var(--color-crimson);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  z-index: 10;
+  animation: easeInAnimation 3.2s cubic-bezier(0.1, 2, 1, 1);
+}

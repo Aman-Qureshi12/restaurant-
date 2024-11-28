@@ -23,7 +23,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="app__pages-large-screen">
+      <body
+        className="app__pages-large-screen"
+        style={{ background: "#0c0c0c" }}
+      >
         <Navbar />
         {children}
         <Footer />

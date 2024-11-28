@@ -3,8 +3,11 @@ import "./Offer.css";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import SuccessModal from "../../Modal/SuccessModal";
+import { useState } from "react";
 
 const Offer = () => {
+  const [showModal, setShowModal] = useState(false);
   const Schema = z.object({
     Name: z.string().min(1, "Please Enter your Name"),
     Email: z.string().email("Invalid Email Address"),
@@ -14,6 +17,7 @@ const Offer = () => {
     register,
     handleSubmit,
     watch,
+    reset,
     formState: { errors },
   } = useForm({
     defaultValues: {
@@ -25,6 +29,8 @@ const Offer = () => {
 
   const onSubmit = (data) => {
     console.log(watch("Name"));
+    setShowModal(true);
+    reset();
   };
 
   return (
@@ -62,6 +68,13 @@ const Offer = () => {
         deals—stay connected and enjoy delicious dining experiences with added
         perks!
       </p>
+      {showModal && (
+        <SuccessModal
+          message="Successfully submitted"
+          show={showModal}
+          onClose={() => setShowModal(false)}
+        />
+      )}
     </section>
   );
 };

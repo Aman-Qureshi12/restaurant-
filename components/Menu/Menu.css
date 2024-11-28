@@ -1,7 +1,3 @@
-.app__menu-page-section {
-  background: var(--color-black);
-}
-
 .app__menu-page-heading {
   text-align: center;
 }
@@ -27,9 +23,6 @@
 .app__dishes-description {
   display: flex;
   flex-wrap: wrap;
-}
-
-.app__dishes-description {
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
@@ -133,5 +126,30 @@
 
   .app__menu-page-card-content p {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .app__dishes-card-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .app__dishes-description {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  .app__dishes-title {
+    font-size: 45px;
+    line-height: 48px;
+  }
+
+  .app__dishes-prices {
+    font-size: 25px;
   }
 }
