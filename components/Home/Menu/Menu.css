@@ -1,5 +1,6 @@
 .app__menu-tabs {
   gap: 50px;
+  cursor: pointer;
 }
 
 .app__menu-section-heading {
