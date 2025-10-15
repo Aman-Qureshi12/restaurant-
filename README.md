@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 style="color:#E74C3C; font-size:30px; font-weight:800;">
+🍽️ Restaurant Website
+</h1>
 
-## Getting Started
+This project leverages **Next.js** for its server-side rendering capabilities and **Supabase** as a robust database solution to create an application capable of filtering and managing data efficiently.  
+It incorporates features like **sliders, form validation, local storage**, and **automatic data refreshing** to enhance user experience and data integrity.
 
-First, run the development server:
+<h2 style="color:#117A65;">⚡ Key Features</h2>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<h3 style="color:#AF7AC5;">1️⃣ Data Filtering and Sorting</h3>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Users can apply various **filters** to refine data based on specific criteria.  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+<h3 style="color:#AF7AC5;">2️⃣ Form Validation with Zod</h3>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Zod** is used to validate user input, ensuring **data integrity** and preventing errors.  
+- Validation rules are defined to enforce **data types, required fields**, and other constraints.  
 
-## Learn More
+<h3 style="color:#AF7AC5;">3️⃣ Data Fetching and Refresh</h3>
 
-To learn more about Next.js, take a look at the following resources:
+- The application fetches data from **Supabase** using optimized API calls.  
+- Data is **automatically refreshed every 30 minutes** to keep the interface up-to-date with the latest information.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<h3 style="color:#AF7AC5;">4️⃣ Responsive Design</h3>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- The application adapts seamlessly to different screen sizes, providing a consistent user experience on both mobile and desktop.  
+- **Responsive layouts** and **media queries** ensure smooth rendering and easy navigation across devices.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<h2 style="color:#CA6F1E;">🧩 Technology Stack</h2>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Next.js:** A React framework for building **server-side rendered** web applications.  
+- **Supabase:** A Firebase-like platform offering **PostgreSQL**, real-time APIs, and authentication.  
+- **Zod:** A schema validation library for defining, validating, and transforming data.
+
+---
+
+<h2 style="color:#7D3C98;">✨ Summary</h2>
+
+This project demonstrates efficient data management, real-time updates, and responsive design — all built on a modern **Next.js + Supabase** stack, ideal for creating dynamic and user-friendly restaurant web applications.
