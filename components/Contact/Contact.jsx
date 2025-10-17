@@ -32,7 +32,7 @@ const Contact = () => {
 
   const onSubmit = (data) => {
     const formData = {
-      name: data.name, // `data.name` is directly passed by `handleSubmit`
+      name: data.name,
       email: data.email,
       message: data.message,
     };
