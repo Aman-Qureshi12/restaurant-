@@ -19,10 +19,6 @@ const Menu = ({ wholeMenu }) => {
     }));
   };
 
-  useEffect(() => {
-    console.log(filters);
-  }, [filters]);
-
   return (
     <section className="section__padding app__menu-page-section">
       <h1 className="headtext__cormorant app__menu-page-heading">Our Menu</h1>
