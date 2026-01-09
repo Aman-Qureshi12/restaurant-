@@ -1,9 +1,9 @@
 import React from "react";
 import "./SpecialDishes.css";
 import Image from "next/image";
-import Gravy from "../../../public/restaurant/ButterChicken.jpeg";
-import Biryani from "../../../public/restaurant/ChickenDumBiryani.jpeg";
-import Desert from "../../../public/restaurant/ChocolateLavaCake.jpeg";
+import Gravy from "../../../public/restaurant/ButterChicken.webp";
+import Biryani from "../../../public/restaurant/ChickenDumBiryani.webp";
+import Desert from "../../../public/restaurant/ChocolateLavaCake.webp";
 
 const SpecialDishes = () => {
   const specialDish = [
@@ -47,7 +47,7 @@ const SpecialDishes = () => {
             return (
               <div key={index} className="app__special-dishes-card">
                 <div className="app__dishes-card-image">
-                  <Image src={dishes.Image} alt="dishes" />
+                  <Image placeholder="blur" src={dishes.Image} alt="dishes" />
                 </div>
                 <div className="app__dishes-card-content">
                   <p className="p__cormorant"> {dishes.dishName}</p>

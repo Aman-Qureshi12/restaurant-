@@ -2,12 +2,12 @@
 import "./Testimonial.css";
 import Image from "next/image";
 import React, { useState } from "react";
-import Quote from "../../../public/Chef/quote.png";
-import Sam from "../../../public/reviewer/Sam.png";
-import John from "../../../public/reviewer/Alex.png";
-import Emily from "../../../public/reviewer/Sarah.png";
-import Sophie from "../../../public/reviewer/Maria.png";
-import Michael from "../../../public/reviewer/David.png";
+import Quote from "../../../public/Chef/quote.webp";
+import Sam from "../../../public/reviewer/Sam.webp";
+import John from "../../../public/reviewer/Alex.webp";
+import Emily from "../../../public/reviewer/Sarah.webp";
+import Sophie from "../../../public/reviewer/Maria.webp";
+import Michael from "../../../public/reviewer/David.webp";
 
 const Testimonial = () => {
   const [reviewers, setReviewers] = useState({
@@ -70,7 +70,7 @@ const Testimonial = () => {
           .map((review, index) => (
             <div className="app__review-card" key={index}>
               <div className="app__quote-image">
-                <Image src={Quote} alt="quote" />
+                <Image placeholder="blur" src={Quote} alt="quote" />
               </div>
               <p className="p__opensans app__testimonial-para">
                 {review.review}
@@ -84,7 +84,12 @@ const Testimonial = () => {
               reviewers.reviewerId === 1 ? "app__reviewer-active" : ""
             }`}
           >
-            <Image src={John} alt="John" onClick={handleReviews} />
+            <Image
+              placeholder="blur"
+              src={John}
+              alt="John"
+              onClick={handleReviews}
+            />
           </div>
 
           <div
@@ -93,6 +98,7 @@ const Testimonial = () => {
             }`}
           >
             <Image
+              placeholder="blur"
               src={Emily}
               alt="Emily"
               onClick={() => setReviewers({ reviewerId: 2 })}
@@ -105,6 +111,7 @@ const Testimonial = () => {
             }`}
           >
             <Image
+              placeholder="blur"
               src={Michael}
               alt="Michael"
               onClick={() => setReviewers({ reviewerId: 3 })}
@@ -116,6 +123,7 @@ const Testimonial = () => {
             }`}
           >
             <Image
+              placeholder="blur"
               src={Sophie}
               alt="Sophie"
               onClick={() => setReviewers({ reviewerId: 4 })}
@@ -128,6 +136,7 @@ const Testimonial = () => {
             }`}
           >
             <Image
+              placeholder="blur"
               src={Sam}
               alt="sam"
               onClick={() => setReviewers({ reviewerId: 5 })}

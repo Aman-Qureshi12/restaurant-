@@ -1,7 +1,7 @@
 import "./About.css";
 import Image from "next/image";
-import Ambiance1 from "../../../public/restaurant/Ambiance1.jpeg";
-import Ambiance2 from "../../../public/restaurant/Ambiance 2.jpeg";
+import Ambiance1 from "../../../public/restaurant/Ambiance1.webp";
+import Ambiance2 from "../../../public/restaurant/Ambiance 2.webp";
 
 const About = () => {
   return (
@@ -17,8 +17,8 @@ const About = () => {
         </p>
       </div>
       <div className="app__about-images">
-        <Image src={Ambiance1} alt="Ambiance" />
-        <Image src={Ambiance2} alt="Ambiance" />
+        <Image placeholder="blur" src={Ambiance1} alt="Ambiance" />
+        <Image placeholder="blur" src={Ambiance2} alt="Ambiance" />
       </div>
       <div className="app__about-info ">
         <p className="p__opensans app__about-paras">

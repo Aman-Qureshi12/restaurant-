@@ -3,6 +3,7 @@ import "./Menu.css";
 import Image from "next/image";
 import React, { useRef, useState } from "react";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
+import SkeletonImage from "../../skeletonImage/skeletonImage";
 
 const Menu = ({ gravy, rice, desert }) => {
   const [menuTab, setMenuTab] = useState({
@@ -73,12 +74,18 @@ const Menu = ({ gravy, rice, desert }) => {
             {gravy.map((gravy, index) => (
               <div className="app__home-menu-card" key={index}>
                 <div className="app__home-menu-image">
-                  <Image
+                  <SkeletonImage
+                    src={gravy.Image}
+                    alt={gravy.dishName}
+                    width={250}
+                    height={250}
+                  />
+                  {/* <Image
                     src={gravy.Image}
                     alt="Dishes"
                     width={250}
                     height={250}
-                  />
+                  /> */}
                 </div>
                 <div className="app__home-menu-content">
                   <p className="p__cormorant"> {gravy.dishName}</p>
@@ -96,12 +103,18 @@ const Menu = ({ gravy, rice, desert }) => {
             {rice.map((rice, index) => (
               <div className="app__home-menu-card" key={index}>
                 <div className="app__home-menu-image">
-                  <Image
+                  <SkeletonImage
+                    src={rice.Image}
+                    alt={rice.dishName}
+                    width={250}
+                    height={250}
+                  />
+                  {/* <Image
                     src={rice.Image}
                     alt="Dishes"
                     width={250}
                     height={250}
-                  />
+                  /> */}
                 </div>
                 <div className="app__home-menu-content">
                   <p className="p__cormorant"> {rice.dishName}</p>
@@ -119,12 +132,18 @@ const Menu = ({ gravy, rice, desert }) => {
             {desert.map((desert, index) => (
               <div className="app__home-menu-card" key={index}>
                 <div className="app__home-menu-image">
-                  <Image
+                  <SkeletonImage
+                    src={desert.Image}
+                    alt={desert.dishName}
+                    width={250}
+                    height={250}
+                  />
+                  {/* <Image
                     src={desert.Image}
                     alt="Dishes"
                     width={250}
                     height={250}
-                  />
+                  /> */}
                 </div>
                 <div className="app__home-menu-content">
                   <p className="p__cormorant"> {desert.dishName}</p>

@@ -1,6 +1,6 @@
 import "./History.css";
 import Image from "next/image";
-import Ambiance2 from "../../../public/restaurant/Ambiance 2.jpeg";
+import Ambiance2 from "../../../public/restaurant/Ambiance 2.webp";
 
 const History = () => {
   return (
@@ -17,7 +17,7 @@ const History = () => {
         </p>
       </div>
       <div className="flex__center app__history-image-container">
-        <Image src={Ambiance2} alt="Ambiance" />
+        <Image placeholder="blur" src={Ambiance2} alt="Ambiance" />
       </div>
     </section>
   );

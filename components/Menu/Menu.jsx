@@ -2,8 +2,10 @@
 import "./Menu.css";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import SkeletonImage from "../skeletonImage/skeletonImage";
 
 const Menu = ({ wholeMenu }) => {
+  const [loading, setLoading] = useState(true);
   const [filters, setFilters] = useState({
     pricing: "",
     dishCategory: "",
@@ -102,12 +104,21 @@ const Menu = ({ wholeMenu }) => {
               .map((menu, index) => (
                 <div key={index} className="app__dishes-card">
                   <div className="app__dishes-card-image">
-                    <Image
+                    {/* {loading && <Loader />} */}
+                    <SkeletonImage
+                      src={menu.Image}
+                      alt={menu.dishName}
+                      width={250}
+                      height={250}
+                    />
+
+                    {/* <Image
+                      onLoad={() => setLoading(false)}
                       src={menu.Image}
                       width={250}
                       height={250}
                       alt="Gravies"
-                    />
+                    /> */}
                   </div>
                   <div className=" app__menu-page-card-content">
                     <p className="p__cormorant  app__dishes-title">
@@ -133,12 +144,18 @@ const Menu = ({ wholeMenu }) => {
             {wholeMenu.map((menu, index) => (
               <div key={index} className="app__dishes-card">
                 <div className="app__dishes-card-image">
-                  <Image
+                  <SkeletonImage
+                    src={menu.Image}
+                    alt={menu.dishName}
+                    width={250}
+                    height={250}
+                  />
+                  {/* <Image
                     src={menu.Image}
                     width={250}
                     height={250}
                     alt="Gravies"
-                  />
+                  /> */}
                 </div>
                 <div className="app__menu-page-card-content">
                   <p className="p__cormorant app__dishes-title">

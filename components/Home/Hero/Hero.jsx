@@ -2,7 +2,7 @@ import "./Hero.css";
 import Link from "next/link";
 import Image from "next/image";
 
-import welcome from "../../../public/restaurant/welcome.png";
+import welcome from "../../../public/restaurant/welcome.webp";
 
 const Hero = () => {
   return (
@@ -26,7 +26,7 @@ const Hero = () => {
         </Link>
       </div>
       <div className="app__hero-img">
-        <Image src={welcome} alt="welcome" />
+        <Image placeholder="blur" priority src={welcome} alt="welcome" />
       </div>
     </section>
   );

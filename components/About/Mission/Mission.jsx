@@ -1,6 +1,6 @@
 import "./Mission.css";
 import Image from "next/image";
-import Ambiance1 from "../../../public/restaurant/Ambiance1.jpeg";
+import Ambiance1 from "../../../public/restaurant/Ambiance1.webp";
 
 const Mission = () => {
   return (
@@ -17,7 +17,7 @@ const Mission = () => {
           bring people together.
         </p>
         <div className="flex__center app__mission-image-container">
-          <Image src={Ambiance1} alt="Ambiance" />
+          <Image placeholder="blur" src={Ambiance1} alt="Ambiance" />
         </div>
       </div>
     </section>
