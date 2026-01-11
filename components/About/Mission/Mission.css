@@ -17,15 +17,15 @@
 }
 
 .app__mission-image-container img {
-  width: 50%;
+  width: 78%;
   height: auto;
   object-fit: contain;
 }
 
 @media screen and (max-width: 1020px) {
-  .app__mission-image-container img {
-    width: 70%;
-  }
+  /* .app__mission-image-container img {
+    width: 78%;
+  } */
   .app__mission-para {
     max-width: 100%;
   }

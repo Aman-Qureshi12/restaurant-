@@ -29,7 +29,7 @@
 @media screen and (max-width: 1020px) {
   .app__history-image-container img {
     gap: 20px;
-    width: 70%;
+    width: 78%;
   }
   .app__history-section {
     grid-template-columns: 1fr;
